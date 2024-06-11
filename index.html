@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body> 
+  
+           <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+       
+        <a href="#" class="nav_logo"><img src="/static/image  .jpg "alt="img"/></a>
+  
+        <ul class="nav_items"> 
+          <li class="nav_item">
+            <a href="home" class="nav_link">HOME</a>
+            <a href="about" class="nav_link">ABOUT</a>
+            <a href="project" class="nav_link">PROJECT</a>
+            <a href="skills" class="nav_link">TECHNICAL SKILLS</a>
+            <a href="contact" class="nav_link">CONTACT</a>
+          </li>
+        </ul>
+
+        <button class="button" id="form-open">Login</button>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="#">
+            <h2>Login</h2>
+
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Enter your password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </span>
+              <a href="#" class="forgot_pw">Forgot password?</a>
+            </div>
+
+            <button class="button">Login Now</button>
+
+            <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+          </form>
+        </div>
+
+        <!-- Signup From -->
+        <div class="form signup_form">
+          <form action="#">
+            <h2>Signup</h2>
+
+            <div class="input_box">
+              <input type="email" placeholder="Enter your email" required />
+              <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Create password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Confirm password" required />
+              <i class="uil uil-lock password"></i>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <button class="button">Signup Now</button>
+
+            <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></d>
+              
+            
+          </form>
+          
+        </div>
+      </div>
+    </section>
+
+
+       <!-- main banner -->
+    <section class="bgimage">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's GOUTHAM</h2>
+                 <p class="hero_desc"></p> 
+            </div>
+            </div>
+   </div> 
+  </div>
+  <!-- about section -->
+<div id="contentcontainer"  class="content">
+  <section id="about" style="display:none;">
+    <h4 class="about-name">ABOUT ME</h4>
+        <div class="about-container">
+        <img src="/static/image 3.jpg" alt="passport size photo"> 
+        
+        <div class="resume" id="resume-button">
+        <a href="resume.pdf" classname="btn btn-outline" onclick="trackDownload()">Download Resume</a>
+      
+      </div>
+         <div class="about">
+         
+         <ul>
+        <li> <h3>NAME:GOUTHAM VAISHNAV</h3></li>
+         <li><h4>QUALIFICATION: BACHELOR OF TECHNOLOGY</h5></li>
+        <li><h4>TECHNICAL SKILLS:HTML,CSS,JAVASCRIPT,PTYHON ,C LANGUAGE, MICROSOFT365,CNAVA</h5></li>
+        <li><h4>HOBBIES:LEARNING NEWTHINGS, TRAVELLING, CODING, EVENT PLANING ,WRITING ARTICLES</h4></li>
+        <li> <p>I'm currently pursuing  BTech in sunstone at  Chaitanya Deemed to be University,
+            where I am deeply engaged in honing <br>my skills knowledge in the field of Python programming 
+            and website development.With a passion for technology and new <br>innovation,I strive to excel myself in 
+            these domains  and contribute my skills and knowledge to involving  world<br> of software development.</p></li>
+      </ul>
+    </div>
+  </div>
+ </section>
+
+ <!-- project section -->
+ <section id="project" style="display:none">
+  <h4 class="project-name">PROJECT</h4>
+  <div class="project-section">
+    <div class="card">
+        <img src="/static/project 1.jpg" alt="Project 1">
+        <h2>NUMBER SYSTEM CONVERSION</h2>
+        <p>Developed "Number System Conversion" project<br>
+          Converted numbers between Binary, Octal, Decimal, and Hexadecimal
+          bases<br>
+          Mastered C programming intricacies while crafting functional code</p>
+    </div>
+    <div class="card">
+        <img src="static/project 2.jpg" alt="Project 2">
+        <h2>CAESAR CIPHER</h2>
+        <p>Decrypt messages encoded with Caesar cipher<br>
+          Engage in unraveling encoded messages<br>
+          Enhance logical thinking with encryption methods</p>
+    </div>
+    <div class="card">
+        <img src="/static/project 3.jpg" alt="Project 3">
+        <h2>CALCULATOR</h2>
+        <p>Structured layout using HTML for user-friendly design
+          Styling with CSS to create aesthetically pleasing interface
+          Implemented arithmetic operations and user inputs using JavaScript</p>
+    </div>
+</div> 
+ </section>
+
+ <!-- skills section -->
+ <section id="skills" style="display:none">
+  <h4 class="skills-name">TECHNICAL SKILLS</h4>
+ <div class="skills-container">
+  <div class="skill html">
+      <div class="skill-logo">
+          <img src="/static/html.png" alt="HTML">
+      </div>
+      <div class="percentage">90%</div>
+      <div class="skill-bar" style="width:90%"></div>
+  </div>
+  <div class="skill css">
+      <div class="skill-logo">
+          <img src="/static/css.png" alt="CSS">
+      </div>
+      <div class="percentage">85%</div>
+      <div class="skill-bar" style="width:85%"></div>
+  </div>
+  <div class="skill js">
+      <div class="skill-logo">
+          <img src="/static/js.jpg" alt="JavaScript">
+      </div>
+      <div class="percentage">60%</div>
+      <div class="skill-bar" style="width:60%"></div>
+  </div>
+  <div class="skill c">
+      <div class="skill-logo">
+          <img src="/static/c.png" alt="C">
+      </div>
+      <div class="percentage">90%</div>
+      <div class="skill-bar" style="width:90%"></div>
+  </div>
+  <div class="skill python">
+      <div class="skill-logo">
+          <img src="/static/python.jpg" alt="Python">
+      </div>
+      <div class="percentage">70%</div>
+      <div class="skill-bar" style="width:70%"></div>
+  </div>
+  <div class="skill microsoft">
+    <div class="skill-logo">
+        <img src="/static/microsoft.jpg" alt="microsoft">
+    </div>
+    <div class="percentage">90%</div>
+    <div class="skill-bar" style="width:90%"></div>
+</div>
+</div>
+</section>
+ 
+  <!-- contact section -->
+<footer>
+  <section id="contact" style="display:none">
+    <!-- <h4 class="contact-name">CONTACT ME</h4>
+   <div  class="contact-container">
+    <h2>CONTACT ME</h2>
+    <p>
+       Email:gouthamvaishnav8@gmail.com<br>
+       Phone:+917989585557 <br>
+       
+    <img id="linkedin-logo" src="/static/logo 1.png" alt="LinkedIn Logo">
+       <img id="github-logo"   src="/static/logo 2.png"  alt="github logo"/>
+       <img id="instagram-logo" src="/static/logo 3.jpg" alt="instagram logo"/>
+        <button class="buttonf" id="feedbackButton">FEEDBACK</button> 
+      </p>
+      <div class="feedback-form">
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+      </div>-->
+
+      <div id="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <div class="input-container">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-container">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="social-links">
+          <img id="linkedin-logo" src="/static/logo 1.png" alt="LinkedIn Logo">
+       <img id="github-logo"   src="/static/logo 2.png"  alt="github logo"/>
+       <img id="instagram-logo" src="/static/logo 3.jpg" alt="instagram logo"/>
+           
+        </div>
+    </div>
+  </section> 
+  </footer>
+
+   
+</div>
+
+  <script src="script.js"></script>
+
+  </body> 
+</html>
+
+   
+
+
